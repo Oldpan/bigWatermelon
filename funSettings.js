@@ -4,12 +4,12 @@
 let firstFruit = 0;
 
 // 修改游戏难度
-const minRandomFruitNum = 0; // 生成随机水果最小值（0-10）
-const maxRandomFruitNum = 5; // 生成随机水果最大值（1-11）
+const min_fruit_num = 0; // 生成随机水果最小值（0-10）
+const max_fruit_num = 5; // 生成随机水果最大值（1-11）
 let setFruits = {
   startFruits: [0, 0, 1, 2, 2, 2], // 指定前几次生成的水果，可填入任意数量的数字
   randomFunction: () => {
-    return minRandomFruitNum + Math.floor(Math.random() * (maxRandomFruitNum - minRandomFruitNum));
+    return min_fruit_num + Math.floor(Math.random() * (max_fruit_num - min_fruit_num));
   }
 }
 
